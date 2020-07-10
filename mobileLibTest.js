@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var mobileLibrary_1 = require("./mobileLibrary");
+var mobile_1 = require("./mobile");
+var movil_a = new mobile_1.Mobile("Iphone", "11 Pro", "Apple", "512 GB", "Space Grey", true, 4, 1790);
+var movil_b = new mobile_1.Mobile("Iphone", "Xs Max", "Apple", "128 GB", "White", true, 3, 1650);
+var movil_c = new mobile_1.Mobile("Samsung", "Galaxy 10", "Samsung", "32 GB", "Silver", true, 2, 1210);
+var movil_d = new mobile_1.Mobile("Iphone", "6 Plus", "Apple", "16 GB", "Black", true, 1, 970);
+var moviles = [movil_a, movil_b, movil_c, movil_d];
+var movilesLib = new mobileLibrary_1.MobileLibrary("Casa Movil", "Madrid", [movil_a, movil_b, movil_c, movil_d]);
+console.log(movilesLib.TotalPriceCalculation());
+console.log(movilesLib.getName());
+console.log(movilesLib.setLocation("Barcelona"));
+console.log(movilesLib.getLocation());
